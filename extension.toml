@@ -1,0 +1,9 @@
+id = "surreal-mcp-server"
+name = "SurrealDB MCP Server"
+description = "Model Context Protocol Server for SurrealDB"
+version = "0.0.1"
+schema_version = 1
+authors = ["Jungin Yu <jungini1226@gmail.com>"]
+
+[context_servers.mcp-server-puppeteer]
+name = "SurrealDB MCP Server"

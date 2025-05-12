@@ -26,6 +26,18 @@ struct SurrealModelContextServerConfig {
     pass: String,
 }
 
+impl SurrealModelContextServerConfig {
+    fn env(self) -> Vec<(String, String)> {
+        vec![
+            ("SURREALDB_URL".into(), self.url),
+            ("SURREALDB_NS".into(), self.ns),
+            ("SURREALDB_DB".into(), self.db),
+            ("SURREALDB_USER".into(), self.user),
+            ("SURREALDB_PASS".into(), self.pass),
+        ]
+    }
+}
+
 impl zed::Extension for SurrealModelContextExtension {
     fn new() -> Self {
         Self
@@ -56,7 +68,7 @@ impl zed::Extension for SurrealModelContextExtension {
                 .join(SERVER_PATH)
                 .to_string_lossy()
                 .to_string()],
-            env: vec![],
+            env: settings.env(),
         })
     }
 

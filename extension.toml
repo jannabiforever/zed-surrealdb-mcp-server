@@ -5,5 +5,5 @@ version = "0.0.1"
 schema_version = 1
 authors = ["Jungin Yu <jungini1226@gmail.com>"]
 
-[context_servers.mcp-server-puppeteer]
+[context_servers.surreal-mcp-server]
 name = "SurrealDB MCP Server"

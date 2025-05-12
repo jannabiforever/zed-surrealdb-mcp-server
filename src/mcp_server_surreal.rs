@@ -2,7 +2,7 @@ use std::env;
 use zed_extension_api::{self as zed, Command, ContextServerId, Project, Result};
 
 const PACKAGE_NAME: &str = "surrealdb-mcp-server";
-const PACKAGE_VERSION: &str = "0.6.2";
+const PACKAGE_VERSION: &str = "0.1.10";
 const SERVER_PATH: &str = "node_modules/surrealdb-mcp-server/build/index.js";
 
 struct SurrealModelContextExtension;

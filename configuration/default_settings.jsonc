@@ -1,0 +1,7 @@
+{
+  "SURREALDB_URL": "ws://localhost:8000",
+  "SURREALDB_NS": "your_namespace",
+  "SURREALDB_DB": "your_database",
+  "SURREALDB_USER": "your_db_user",
+  "SURREALDB_PASS": "your_db_password",
+}
